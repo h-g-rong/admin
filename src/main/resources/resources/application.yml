@@ -1,0 +1,48 @@
+#server:
+#  port: 8888
+#spring:
+#  datasource:
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql://localhost:3306/blog?serverTimezone=UTC
+#      username: root
+#      password: 1234
+#  application:
+#    name: blog
+#mybatis-plus:
+#  global-config:
+#    db-config:
+#      table-prefix: ms_
+#      id-type: auto
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8888
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/blog?serverTimezone=UTC
+      username: root
+      password: 1234
+  application:
+    name: blog
+  redis:
+    host: localhost
+    port: 6379
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: ms_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+accessKey: E-S8Q0uPatPEmRvdIPVnenidEj5gdtCaGQd5fiHh
+secretKey: -kN6Rh9kKKa8qWN7ozrxEQwXs2z4gCuiLTbPA-lo
+bucket: hgr-blog
+# 上传文件总的最大值
+spring.servlet.multipart.max-request-size: 20MB
+  # 单个文件的最大值
+spring.servlet.multipart.max-file-size: 2MB
+
+
